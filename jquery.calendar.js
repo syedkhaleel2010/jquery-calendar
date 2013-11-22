@@ -2632,8 +2632,8 @@
 								case const_month :
 
 									// Loop over each of the dateline elements.
-									$(data.elements.dayblock).removeClass('ui-'+plugin_name+'-today').each(function(i,date){
-
+								//	$(data.elements.dayblock).removeClass('ui-'+plugin_name+'-today').each(function(i,date){
+                                                   $(.ui-cal-date).removeClass('ui-'+plugin_name+'-today').each(function(i,date){
 										// Get a shortcut to the label, and create the new date objects.
 										var $date				= $(date),
 											clonedDateObject	= newdate.addDays(i),
